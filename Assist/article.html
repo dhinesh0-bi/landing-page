@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog & Articles | Code Launch</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #0e1114;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1.page-title {
+      font-size: 2.5rem;
+      color:  #27ae60;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .article-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .article {
+      background-color: #1b1f24;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .article:hover {
+      transform: translateY(-5px);
+    }
+
+    .article h2 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .article .meta {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .article p {
+      color: #ccc;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      color:  #27ae60;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      h1.page-title {
+        font-size: 2rem;
+      }
+
+      .article {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="page-title">Our Insights & Articles</h1>
+
+    <div class="article-list">
+
+      <div class="article">
+        <h2>How SEO Boosts Your Business in 2025</h2>
+        <div class="meta">Published: June 30, 2025 • 5 min read</div>
+        <p>Discover the top SEO strategies used by modern businesses to rank higher, gain organic traffic, and outperform competitors in search engine results...</p>
+        <a class="read-more" href="https://yoast.com/seo-blog/">Read More →</a>
+      </div>
+
+      <div class="article">
+        <h2>Top 5 Web Design Trends That Convert</h2>
+        <div class="meta">Published: June 25, 2025 • 4 min read</div>
+        <p>We cover the latest UI/UX design practices that not only look great but also drive conversions, reduce bounce rate, and improve engagement...</p>
+        <a class="read-more" href="https://galvintech.com/the-6-web-design-trends-that-convert/">Read More →</a>
+      </div>
+
+      <div class="article">
+        <h2>Branding Your Startup the Right Way</h2>
+        <div class="meta">Published: June 20, 2025 • 6 min read</div>
+        <p>Brand identity is more than a logo. We share how Code Launch crafts brand systems that stick with your audience and drive loyalty...</p>
+        <a class="read-more" href="https://www.hubspot.com/startups/branding-for-startups">Read More →</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What We Do | Code Launch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e1114;
+      color: white;
+    }
+
+    header {
+      background-color: #0e1114;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header h1:hover{
+      color: orangered;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
+    }
+
+    .service-box {
+      background: #1b1f24;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 25px;
+      width: 280px;
+      text-align: center;
+    }
+
+    .service-box h3 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .projects {
+      background-color: #0e1114;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .projects h2 {
+      margin-bottom: 30px;
+      color: white;
+    }
+
+    .projects h2:hover{
+      color:  #27ae60;
+    }
+
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .project-card {
+      width: 300px;
+      background: #1b1f24;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .project-card h4 {
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .footer {
+      background-color: #0e1114;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .service-box, .project-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>What We Do</h1>
+    <p>At Code Launch, we turn your ideas into reality through exceptional design, code, and strategy. Here's how we help your business grow.</p>
+  </header>
+
+  <section class="services">
+    <div class="service-box">
+      <h3>Website Development</h3>
+      <p>We build responsive, fast, and functional websites tailored to your brand.</p>
+    </div>
+    <div class="service-box">
+      <h3>Branding</h3>
+      <p>From logo to full identity systems, we create visuals that stand out.</p>
+    </div>
+    <div class="service-box">
+      <h3>Digital Marketing</h3>
+      <p>SEO, social media, and content marketing that drives measurable growth.</p>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Our Work</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h4>Local Business Website</h4>
+        <p>Designed and launched a responsive site for a retail store to improve local SEO and foot traffic.</p>
+      </div>
+      <div class="project-card">
+        <h4>E-Commerce Redesign</h4>
+        <p>Overhauled a Shopify store with better UI, boosting conversion by 28% within 2 months.</p>
+      </div>
+      <div class="project-card">
+        <h4>Startup Branding Kit</h4>
+        <p>Delivered a complete logo, pitch deck, and website to help a startup raise funding.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Code Launch. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

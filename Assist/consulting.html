@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Consultation | Code Launch</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family:  sans-serif;
+      background-color: #0e1114;
+      color: white;
+    }
+
+    .consultation-wrapper {
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .consultation-info {
+      flex: 1 1 300px;
+      padding: 20px;
+      max-width: 500px;
+    }
+
+    .consultation-info h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #27ae60;
+    }
+    .consultation-info h1:hover{
+      color: orangered;
+    }
+
+    .consultation-info p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .consultation-form {
+      background-color: #1b1f24;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      flex: 1 1 320px;
+      max-width: 500px;
+      margin-top: 20px;
+    }
+
+    .consultation-form h2 {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #444;
+      background: #2a2e34;
+      color: white;
+      font-size: 1rem;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #bbb;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 1rem;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: orangered;
+    }
+
+    @media (max-width: 768px) {
+      .consultation-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .consultation-info h1 {
+        font-size: 2rem;
+      }
+
+      .consultation-form {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="consultation-wrapper">
+    <div class="consultation-info">
+      <h1>Let’s Talk Strategy</h1>
+      <p>Ready to grow your brand or website? Book a one-on-one consultation with our experts. We'll guide you through your digital roadmap—from web development to branding and beyond.</p>
+    </div>
+
+    <div class="consultation-form">
+      <h2>Book a Consultation</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <textarea name="message" placeholder="What would you like to discuss?" required></textarea>
+        <button type="submit">Book Appointment</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
